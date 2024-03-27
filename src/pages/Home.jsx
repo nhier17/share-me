@@ -12,6 +12,7 @@ import { userQuery } from "../utils/data"
 const Home = () => {
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
   const [user, setUser] = useState(null);
+
   const scrollRef = useRef(null);
 //get user info from localStorage
 const userInfo = localStorage.getItem('user') !== 'undefined' ? JSON.parse(localStorage.getItem('user')) : localStorage.clear();
@@ -61,7 +62,7 @@ useEffect(() => {
     <div className="pb-2 flex-1 h-screen overflow-y-scroll" ref={scrollRef}>
       <Routes>
         <Route path="/user-profile/:userId" element={<UserProfile />} />
-        <Route path="/" element={<Pins user={user && user} />} />
+        <Route path="/*" element={<Pins user={user && user} />} />
       </Routes>
     </div>
   </div>
