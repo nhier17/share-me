@@ -8,6 +8,7 @@ import Pins from "./Pins";
 import { client } from "../client";
 import logo from "../assets/logo.png";
 import { userQuery } from "../utils/data"
+import { fetchUser } from "../utils/fetchUser"
 
 const Home = () => {
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
@@ -15,7 +16,7 @@ const Home = () => {
 
   const scrollRef = useRef(null);
 //get user info from localStorage
-const userInfo = localStorage.getItem('user') !== 'undefined' ? JSON.parse(localStorage.getItem('user')) : localStorage.clear();
+const userInfo = fetchUser()
 
 //extract user info from sanity
 useEffect(() => {
