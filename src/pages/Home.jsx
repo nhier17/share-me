@@ -43,7 +43,7 @@ useEffect(() => {
         <Link to="/">
           <img src={logo} alt="logo" className="w-28" />
         </Link>
-        <Link to={`user-profile/${user?._id}`} onClick={() => console.log("User ID:", user?._id)}>
+        <Link to={`user-profile/${user?._id}`}>
           {user?.image ? (
           <img src={user?.image} alt="user-pic" className="w-9 h-9 rounded-full " />
           ) : (
