@@ -90,7 +90,7 @@ if(!alreadySaved) {
                     )}
             </div>
             <div className="flex justify-between items-center gap-2 w-full">
-                {postedBy?._id === user._id && (
+                {postedBy?._id === user?._id && (
                   <button
                   type="button"
                   onClick={(e) => {
