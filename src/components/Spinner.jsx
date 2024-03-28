@@ -1,14 +1,17 @@
 import React from 'react';
-import { TailSpin } from 'react-loader-spinner';
+import { Bars } from 'react-loader-spinner';
 
 const Spinner = ({ message })  =>{
   return (
     <div className="flex flex-col justify-center items-center w-full h-full">
-      <TailSpin
-        type="Circles"
-        color="#00BFFF"
-        height={50}
-        width={200}
+      <Bars
+         height="80"
+         width="80"
+         color="#4fa94d"
+         ariaLabel="bars-loading"
+         wrapperStyle={{}}
+         wrapperClass=""
+         visible={true}
         className="m-5"
       />
 
