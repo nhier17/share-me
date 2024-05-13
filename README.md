@@ -85,9 +85,12 @@ Share Me is designed to be intuitive and user-friendly. Here are some common tas
 - React
 - Sanity
 - JavaScript
-- CSS
+- Tailwind
+  
+## Framework Used
 
-## License
+- GIT
 
-This project is licensed under the [MIT License](link-to-license-file). For details, see the [LICENSE](link-to-license-file) file.
+
+## License: [MIT License](link-to-license-file). 
 
